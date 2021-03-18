@@ -16,8 +16,8 @@ jobs:
       - name: Build_LR_2_1
         run: |
           cd Lab2/Lab2_1/
-          make LR2_1_Test 
-          ./LR2_1_Test
+          make LR_2_1_Test 
+          ./LR_2_1_Test
           cd ../Lab2_2  
-          make LR2_2_Test 
-          ./LR2_2_Test
+          make LR_2_2_Test 
+          ./LR_2_2_Test
