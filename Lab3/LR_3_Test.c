@@ -1,4 +1,4 @@
-#include "LR_3.H"
+#include "LR_3.h"
 #include <assert.h>
 
 void MatrixCreateTest ()
