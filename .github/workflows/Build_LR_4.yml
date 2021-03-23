@@ -1,0 +1,23 @@
+name: build-and-test
+
+on: push
+
+jobs:
+
+  buildandtest:
+
+    name: Build and test the program
+
+    runs-on: Ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Build_LR_4
+        run: |
+          cd Lab4/Lab4_1/
+          make LR_4_1_Test 
+          ./LR_4_1_Test
+          cd ../Lab4_2  
+          make LR_4_2_Test 
+          ./LR_4_2_Test
