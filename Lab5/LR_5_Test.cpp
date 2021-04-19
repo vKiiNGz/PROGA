@@ -41,7 +41,6 @@ void TestReshetoErat()
 	assert(factor[2] == true && factor[3] == true && factor[4] == false);
 	printf("\nReshetoErat test completed");
 }
-#undef main
 int _tmain(int argc, _TCHAR* argv[])
 {
 	TestAddToListString();
