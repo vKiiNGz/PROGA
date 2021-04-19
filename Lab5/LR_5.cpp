@@ -18,7 +18,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	char *number = new char [80];
 	List numb;
-	gets(number);
+	cin.getline(number, 80);
 	bool* factor = new bool[100000];
 	numb = AddToListString(number);
 	factor = ReshetoErat();
