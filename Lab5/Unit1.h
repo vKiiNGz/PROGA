@@ -4,7 +4,7 @@
 #define Unit1H
 #include <iostream>
 #include "list.h"
-#include <string>
+#include <cstring>
 using namespace std;
 //---------------------------------------------------------------------------
 List AddToListString(char number[])
