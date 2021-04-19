@@ -14,6 +14,7 @@
 #include <cstring>
 #include "Unit1.h"
 using namespace std;
+#undef main
 int _tmain(int argc, _TCHAR* argv[])
 {
 	char *number = new char [80];
