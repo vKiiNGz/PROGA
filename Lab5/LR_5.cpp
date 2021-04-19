@@ -11,7 +11,7 @@
 #include "stdio.h"
 #include <iostream>
 #include "list.h"
-#include <string>
+#include <cstring>
 #include "Unit1.h"
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
