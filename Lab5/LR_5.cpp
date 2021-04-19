@@ -11,7 +11,6 @@
 #include "stdio.h"
 #include <iostream>
 #include "list.h"
-#include "conio.h"
 #include <string>
 #include "Unit1.h"
 using namespace std;
@@ -24,6 +23,5 @@ int _tmain(int argc, _TCHAR* argv[])
 	numb = AddToListString(number);
 	factor = ReshetoErat();
 	Task(numb, factor);
-	getch();
 	return 0;
 }
