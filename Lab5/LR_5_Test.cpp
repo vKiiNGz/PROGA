@@ -12,7 +12,6 @@
 #include "list.h"
 #include "Unit1.h"
 #include "assert.h"
-#undef AddToListString
 void TestAddToListString()
 {
 	char *number = new char [80];
@@ -26,7 +25,6 @@ void TestAddToListString()
 	assert(x != 123);
 	printf("AddToListString test completed");
 }
-#undef AddToListLLong
 void TestAddToListLLong()
 {
 	long long x = 123, y;
@@ -36,7 +34,6 @@ void TestAddToListLLong()
 	assert(y != 123);
 	printf("\nAddToListLLong test completed");
 }
-#undef ReshetoErat
 void TestReshetoErat()
 {
 	bool* factor = new bool[100000];
