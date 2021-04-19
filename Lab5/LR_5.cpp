@@ -14,7 +14,6 @@
 #include <cstring>
 #include "Unit1.h"
 using namespace std;
-#ifndef TESTING
 int _tmain(int argc, _TCHAR* argv[])
 {
 	char *number = new char [80];
@@ -26,4 +25,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	Task(numb, factor);
 	return 0;
 }
-#endif
