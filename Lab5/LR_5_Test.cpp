@@ -8,10 +8,10 @@
   #define _tmain main
 #endif
 
-#include <stdio.h>
+#include "stdio.h"
 #include "list.h"
 #include "Unit1.h"
-#include <assert.h>
+#include "assert.h"
 void TestAddToListString()
 {
 	char *number = new char [80];
