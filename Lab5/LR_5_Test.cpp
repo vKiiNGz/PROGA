@@ -47,6 +47,5 @@ int _tmain(int argc, _TCHAR* argv[])
 	TestAddToListString();
 	TestAddToListLLong();
 	TestReshetoErat();
-	getch();
 	return 0;
 }
