@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        uses: actions/setup-node@v1
       - name: Build_LR_5
         run: |
           cd Lab5/
