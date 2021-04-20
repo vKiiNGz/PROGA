@@ -125,7 +125,6 @@ void Task(List numb, bool* factor)
 			}
 		}
 		while(answ == false);
-
 	}
 	while(help > 1);
 }
