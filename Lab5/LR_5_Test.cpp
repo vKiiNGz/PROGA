@@ -12,6 +12,7 @@
 #include "list.h"
 #include "assert.h"
 #include <cstring>
+using namespace std;
 List AddToListString(char number[])
 {
 	List numb;
