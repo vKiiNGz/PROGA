@@ -155,11 +155,10 @@ void TestReshetoErat()
 	printf("\nReshetoErat test completed");
 }
 #undef main
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	TestAddToListString();
 	TestAddToListLLong();
 	TestReshetoErat();
 	return 0;
 }
-#endif
