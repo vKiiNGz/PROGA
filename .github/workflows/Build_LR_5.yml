@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make main
-      working-directory: ./lab5
+    - name: make Lab5
+      working-directory: ./Lab5
       run: make test
