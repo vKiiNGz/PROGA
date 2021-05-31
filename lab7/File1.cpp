@@ -327,7 +327,7 @@ void In(Person &user, fstream &baze)
 	string str = "";
     int help = 0;
 	cout << "o" << endl;
-	while (str[(int)str.length()-1] != '$')
+	while (!baze.eof())
 	{
 		baze.getline(buff, sizeof(buff));
 		str = buff;
