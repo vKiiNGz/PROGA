@@ -7,9 +7,9 @@ void SearchContacntTest()
 	baze.open("Data.txt");
 	Person user;
 	In(user, baze);
-    string answ, _name = "Ilya", _surname = "Lazyk";  
+    string answ, _name = "Nickolay", _surname = "Vashkevich";  
     answ = SearchContacnt(user, _name, _surname);
-    assert(answ == "Ilya Lazyk Sergeevich BSUIR 03.07.2002 ");
+    assert(answ == "Nickolay Vashkevich Vladimirovich BSUIR 12.09.2002 ");
     cout << "SearchContacnt test completed" << endl; 
 }
 void ScheduleTest()
