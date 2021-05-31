@@ -65,7 +65,7 @@ void ShowAllEventsTest()
 int main()
 {
     ShowAllEventsTest();  
-    //SearchContacntTest();
+    SearchContacntTest();
     //ScheduleTest();
     InTest();
     //OutTest();
