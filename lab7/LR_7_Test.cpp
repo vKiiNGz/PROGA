@@ -27,7 +27,7 @@ void ScheduleTest()
 void InTest()
 {
     fstream baze;
-	baze.open("Data.txt", std::ios::out);
+	baze.open("Data.txt");
 	Person user;
 	In(user, baze);
     assert(user.Contacts.first->name == "Nickolay");
@@ -38,7 +38,7 @@ void InTest()
 void OutTest()
 {
     fstream baze;
-	baze.open("Data.txt", std::ios::out);
+	baze.open("Data.txt");
 	Person user;
 	In(user, baze);
     Out(user, baze);
