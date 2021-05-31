@@ -11,13 +11,9 @@ void SearchContacntTest()
 	baze.open("Data.txt");
 	char buff[256];
 	Person user;
-	cout << "aaa" << endl;
 	In(user, baze);
-	cout << "aaa" << endl;
     string answ, _name = "Ilya", _surname = "Lazyk";  
-	cout << "aaa" << endl;
     answ = SearchContacnt(user, _name, _surname);
-	cout << "aaa" << endl;
     assert(answ == "Ilya Lazyk Sergeevich BSUIR 03.07.2002 ");
     cout << "SearchContacnt test completed" << endl; 
 }
@@ -85,7 +81,7 @@ void ShowAllEventsTest()
 int main()
 {
     ShowAllEventsTest();  
-    SearchContacntTest();
+    //SearchContacntTest();
     ScheduleTest();
     InTest();
     OutTest();
