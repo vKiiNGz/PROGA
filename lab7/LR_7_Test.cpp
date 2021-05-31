@@ -13,10 +13,11 @@ void SearchContacntTest()
 }
 void ScheduleTest()
 {
-    fstream baze;
-	baze.open("Data.txt");
 	Person user;
-	In(user, baze);
+    string _name = "Sementsov_Birthday", _data = "23.05.2002", _start = "18:00", _place = "Prime_Hall";
+	int _time = 240;
+	bool _period = true;
+    user.Events.push_back(_name, _data, _place, _start, _time, _period);
     string answ;
     answ = Schedule(user, "23.05.2002");
     assert(answ == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
