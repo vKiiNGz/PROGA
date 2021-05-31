@@ -3,16 +3,15 @@
 
 void SearchContacntTest()
 {
-    fstream baze;
-	baze.open("Data.txt");
-	Person user;
-	In(user, baze);
-    string answ, _name = "Nickolay", _surname = "Vashkevich";  
+    Person user;
+	string _name1 = "Nikita", _surname1 = "Sementsov", _patronymic1= "Alexeyevich", _placeofwork1 = "GRGU", _dateofbirth1 = "23.05.2002";
+    user.Contacts.push_back(_name1, _surname1, _patronymic1, _placeofwork1, _dateofbirth1);
+    string answ, _name = "Nikita", _surname = "Sementsov";  
     answ = SearchContacnt(user, _name, _surname);
 	cout << answ << endl;
 	cout << user.Contacts.first->name << endl;
 	
-    assert(answ == "Nickolay Vashkevich Vladimirovich BSUIR 12.09.2002 ");
+    assert(answ == "Nikita Sementsov Alexeyevich GRGU 23.05.2002 ");
     cout << "SearchContacnt test completed" << endl; 
 }
 void ScheduleTest()
