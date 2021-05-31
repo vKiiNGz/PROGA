@@ -9,7 +9,6 @@ void SearchContacntTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     string answ, _name = "Ilya", _surname = "Lazyk";  
@@ -21,7 +20,6 @@ void ScheduleTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     string answ;
@@ -65,8 +63,8 @@ void ShowAllEventsTest()
 int main()
 {
     ShowAllEventsTest();  
-    SearchContacntTest();
-    //ScheduleTest();
+    //SearchContacntTest();
+    ScheduleTest();
     InTest();
     //OutTest();
     //ShowAllContactsTest();  
