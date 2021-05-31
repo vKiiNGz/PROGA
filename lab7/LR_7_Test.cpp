@@ -75,13 +75,12 @@ void ShowAllEventsTest()
     answ = ShowAllEvents(user);
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
 	
-	fstream baze;
-	baze.open("Data.txt");
-	char buff[256];
-	Person user1;
+fstream baze;
+baze.open("Data.txt");
+char buff[256];
+Person user1;
 	In(user1, baze);
-    Out(user1, baze);
-	baze.close();
+
     //assert(user1.Contacts.first->name == "Nickolay");
     cout << "Out test completed" << endl;
 	
