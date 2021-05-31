@@ -45,6 +45,17 @@ void OutTest()
     Out(user, baze);
     cout << "Out test completed" << endl;
 }
+void ShowAllContactsTest()
+{
+    Person user1;
+    string _name1 = "Nikita", _surname1 = "Sementsov", _patronymic1= "Alexeyevich", _placeofwork1 = "GRGU", _dateofbirth1 = "23.05.2002";
+    user1.Contacts.push_back(_name1, _surname1, _patronymic1, _placeofwork1, _dateofbirth1);
+    string* answ1 = new string[user1.Contacts.size + 1];
+    answ1 = ShowAllContacts(user1);
+    assert(answ1[0] == "Nikita Sementsov Alexeyevich GRGU 23.05.2002 ");
+    cout << user1.Contacts.size;
+    cout << "ShowAllContacts test completed" << endl;
+}
 void ShowAllEventsTest()
 {
     Person user;
@@ -61,9 +72,10 @@ void ShowAllEventsTest()
 
 int main()
 {
-    ShowAllEventsTest();  
+    ShowAllEventsTest(); 
+    ShowAllContactsTest();
     //SearchContacntTest();
-    ScheduleTest();
+    //ScheduleTest();
     InTest();
     //OutTest();  
 }
