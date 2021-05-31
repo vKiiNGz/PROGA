@@ -5,7 +5,6 @@ void SearchContacntTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     string answ, _name = "Ilya", _surname = "Lazyk";  
@@ -17,7 +16,6 @@ void ScheduleTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     string answ;
@@ -30,7 +28,6 @@ void InTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     assert(user.Contacts.first->name == "Nickolay");
@@ -42,7 +39,6 @@ void OutTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     Out(user, baze);
