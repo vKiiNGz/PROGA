@@ -45,39 +45,29 @@ void OutTest()
 	baze.open("Data.txt");
 	Person user;
 	In(user, baze);
-    //Out(user, baze);
+    Out(user, baze);
     cout << "Out test completed" << endl;
 }
 void ShowAllEventsTest()
 {
     Person user;
-	fstream baze;
-	baze.open("Data.txt");
-	In(user, baze);
     string* answ = new string[1];
     string _name = "Sementsov_Birthday", _data = "23.05.2002", _start = "18:00", _place = "Prime_Hall";
 	int _time = 240;
 	bool _period = true;
     user.Events.push_back(_name, _data, _place, _start, _time, _period);
-    answ = ShowAllEvents(user);
-	
+    answ = ShowAllEvents(user);	
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
-	
-	string ns = Schedule(user, "23.05.2002");
-    assert(ns == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
-    cout << "Schedule test completed" << endl;
-    cout << "In test completed" << endl;
-	
     cout << "ShowAllEvents test completed" << endl;
 }
 #undef main
 
 int main()
 {
-    //ShowAllEventsTest();  
+    ShowAllEventsTest();  
     //SearchContacntTest();
     //ScheduleTest();
     InTest();
-    OutTest();
+    //OutTest();
     //ShowAllContactsTest();  
 }
