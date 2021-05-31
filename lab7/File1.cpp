@@ -489,7 +489,7 @@ void Out(Person &user, fstream &baze)
 string* ShowAllContacts(Person &user)
 {
 	string viv;
-	string* arr = new string[user.Contacts.size + 1];
+	string* arr = new string[user.Contacts.size];
 	cout << "All your contacts: " << endl;;
 	for (int j = 0; j <= user.Contacts.size; j++)
 	{
@@ -507,7 +507,7 @@ string* ShowAllContacts(Person &user)
 string* ShowAllEvents(Person &user)
 {
 	string viv;
-	string* arr = new string[user.Events.size + 1];
+	string* arr = new string[user.Events.size];
 	cout << "All your events: " << endl;
 	for (int i = 0; i <= user.Events.size ; i++)
 	{
@@ -586,9 +586,9 @@ int _tmain(int argc, _TCHAR* argv[])
 				}
 				case 5:
 				{
-					string* arr = new string[user.Contacts.size + 1];
+					string* arr = new string[user.Contacts.size];
 					arr = ShowAllContacts(user);
-					for (int j = 0; j <= user.Contacts.size; j++)
+					for (int j = 0; j < user.Contacts.size; j++)
 					{
 						cout << arr[j] << endl;
 					}
@@ -597,9 +597,9 @@ int _tmain(int argc, _TCHAR* argv[])
 				}
 				case 6:
 				{
-					string* arr = new string[user.Events.size + 1];
+					string* arr = new string[user.Events.size];
 					arr = ShowAllEvents(user);
-					for (int j = 0; j <= user.Events.size; j++)
+					for (int j = 0; j < user.Events.size; j++)
 					{
 						cout << arr[j] << endl;
 					}
