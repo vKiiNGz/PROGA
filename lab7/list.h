@@ -34,7 +34,6 @@ struct listP {
 			last = p;
 			first->next = last;
 			last->prev = first;
-			size = 1;
 			return;
 		}
 		last->next = p;
@@ -83,7 +82,6 @@ struct listE {
 			last = p;
 			first->next = last;
 			last->prev = first;
-			size = 1;
 			return;
 		}
 		last->next = p;
