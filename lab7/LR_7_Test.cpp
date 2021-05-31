@@ -33,10 +33,14 @@ void ScheduleTest()
 void InTest()
 {
     fstream baze;
+	cout << "aaa" << endl;
 	baze.open("Data.txt");
+	cout << "aaa" << endl;
 	char buff[256];
 	Person user;
+	cout << "aaa" << endl;
 	In(user, baze);
+	cout << "aaa" << endl;
     assert(user.Contacts.first->name == "Nickolay");
     assert(user.Contacts[1] ->name== "Nikita");
     cout << "In test completed" << endl;
