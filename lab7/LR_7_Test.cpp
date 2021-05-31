@@ -29,11 +29,6 @@ void InTest()
     fstream baze;
 	baze.open("Data.txt");
 	Person user;
-	if (!baze.is_open()) 
-    	{
-		cout << "aboba" << endl;	
-		baze.open("Data.txt");
-    	}
 	In(user, baze);
     assert(user.Contacts.first->name == "Nickolay");
     assert(user.Contacts[1] ->name== "Nikita");
