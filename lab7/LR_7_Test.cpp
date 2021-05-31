@@ -83,7 +83,7 @@ int main()
     ShowAllEventsTest();  
     //SearchContacntTest();
     //ScheduleTest();
-    //InTest();
+    InTest();
     //OutTest();
-    ShowAllContactsTest();  
+    //ShowAllContactsTest();  
 }
