@@ -1,0 +1,11 @@
+Dmitry Gotchenya Gennadievich BSUIR 08.01.2003
+Contacts:
+Nickolay Vashkevich Vladimirovich BSUIR 12.09.2002 
+Nikita Sementsov Alexeyevich GRGU 23.05.2002 
+Ilya Nizovec Sergeevich BSUIR 13.03.2003 
+Ilya Lazyk Sergeevich BSUIR 03.07.2002 
+Events:
+Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period
+City_Walk 21.05.2002 Minsk 19:00 180 nonperiod
+Homework 25.05.2021 Hostel 19:00 60 period
+TraveToHome 28.05.2021 BSU_IR 18:30 90 nonperiod
