@@ -17,4 +17,4 @@ jobs:
       working-directory: ./lab7
       run: make test
     - name: Codecov
-      run: export CODECOV_TOKEN="be7e8561-c637-4eee-9711-1c8c02adae0c" && bash <(curl -s https://codecov.io/bash)
+      run: bash <(curl -s https://codecov.io/bash)
