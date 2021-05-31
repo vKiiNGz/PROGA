@@ -270,7 +270,6 @@ void AddEvent(Person &user)
 
 string SearchContacnt(Person &user, string _name, string _surname)
 {
-	char buff[256];
 	bool f = true;
 	string viv;
 
@@ -292,6 +291,7 @@ string SearchContacnt(Person &user, string _name, string _surname)
 	{
 		return "This contact does not exist. ";
 	}
+	return "This contact does not exist. ";
 }
 
 string Schedule(Person &user, string _date)
@@ -318,6 +318,7 @@ string Schedule(Person &user, string _date)
 			return viv;
 		}
 	}
+	return viv;
 }
 
 void In(Person &user, fstream &baze)
@@ -368,7 +369,7 @@ void In(Person &user, fstream &baze)
 			int spc = 0;
 			string h;
 			string name, surname, patronymic, placeOfWork, dateOfBirth;
-			for (int i = 0; i < str.length(); i++)
+			for (int i = 0; i < (int)str.length(); i++)
 			{
 				if (str[i] == ' ')
 				{
