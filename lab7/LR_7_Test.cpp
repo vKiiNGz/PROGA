@@ -78,11 +78,11 @@ void ShowAllEventsTest()
 	fstream baze;
 	baze.open("Data.txt");
 	char buff[256];
-	Person user;
-	In(user, baze);
-    Out(user, baze);
+	Person user1;
+	In(user1, baze);
+    Out(user1, baze);
 	baze.close();
-    assert(user.Contacts.first->name == "Nickolay");
+    assert(user1.Contacts.first->name == "Nickolay");
     cout << "Out test completed" << endl;
 	
     cout << "ShowAllEvents test completed" << endl;
