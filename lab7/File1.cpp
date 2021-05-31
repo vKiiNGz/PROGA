@@ -327,6 +327,11 @@ void In(Person &user, fstream &baze)
 	string str = "";
     int help = 0;
 	cout << "o" << endl;
+	if (!baze.is_open()) 
+    	{
+		cout << "aboba" << endl;	
+		baze.open("Data.txt");
+    	}
 	while (!baze.eof())
 	{
 		baze.getline(buff, sizeof(buff));
