@@ -43,12 +43,10 @@ void OutTest()
 {
     fstream baze;
 	baze.open("Data.txt");
-	char buff[256];
 	Person user;
 	In(user, baze);
     Out(user, baze);
 	baze.close();
-    assert(user.Contacts.first->name == "Nickolay");
     cout << "Out test completed" << endl;
 }
 void ShowAllEventsTest()
@@ -81,6 +79,6 @@ int main()
     //SearchContacntTest();
     //ScheduleTest();
     InTest();
-    //OutTest();
+    OutTest();
     //ShowAllContactsTest();  
 }
