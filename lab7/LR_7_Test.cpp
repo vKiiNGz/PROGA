@@ -30,18 +30,6 @@ void ScheduleTest()
     cout << "Schedule test completed" << endl;
     
 }
-void InTest()
-{
-    fstream baze;
-	baze.open("Data.txt");
-	char buff[256];
-	Person user;
-	In(user, baze);
-    assert(user.Contacts.first->name == "Nickolay");
-    assert(user.Contacts[1] ->name== "Nikita");
-    cout << "In test completed" << endl;
-
-}
 void OutTest()
 {
     fstream baze;
@@ -66,12 +54,13 @@ void ShowAllEventsTest()
 	bool _period = true;
     user.Events.push_back(_name, _data, _place, _start, _time, _period);
     answ = ShowAllEvents(user);
-	 Out(user, baze);
+	
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
 	
-	
+	string ns = Schedule(user, "23.05.2002");
+    assert(ns == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
+    cout << "Schedule test completed" << endl;
     cout << "In test completed" << endl;
-	cout << "Out test completed" << endl;
 	
     cout << "ShowAllEvents test completed" << endl;
 }
