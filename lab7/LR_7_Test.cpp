@@ -30,6 +30,15 @@ void ScheduleTest()
     cout << "Schedule test completed" << endl;
     
 }
+void InTest()
+{
+    fstream baze;
+	baze.open("Data.txt");
+	Person user;
+	In(user, baze);
+    cout << "In test completed" << endl;
+
+}
 void OutTest()
 {
     fstream baze;
@@ -68,10 +77,10 @@ void ShowAllEventsTest()
 
 int main()
 {
-    ShowAllEventsTest();  
+    //ShowAllEventsTest();  
     //SearchContacntTest();
     //ScheduleTest();
-    //InTest();
+    InTest();
     //OutTest();
     //ShowAllContactsTest();  
 }
