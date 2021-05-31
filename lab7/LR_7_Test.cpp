@@ -71,7 +71,7 @@ void ShowAllEventsTest()
 
 int main()
 {
-    ShowAllEventsTest(); 
+    //ShowAllEventsTest(); 
     ShowAllContactsTest();
     //SearchContacntTest();
     //ScheduleTest();
