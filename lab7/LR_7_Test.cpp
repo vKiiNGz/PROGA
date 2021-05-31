@@ -45,8 +45,7 @@ void OutTest()
 	baze.open("Data.txt");
 	Person user;
 	In(user, baze);
-    Out(user, baze);
-	baze.close();
+    //Out(user, baze);
     cout << "Out test completed" << endl;
 }
 void ShowAllEventsTest()
