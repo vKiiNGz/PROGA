@@ -17,6 +17,4 @@ jobs:
       working-directory: ./lab7
       run: make test
     - name: Codecov
-      run: curl -s https://codecov.io/bash > .codecov
-            chmod +x .codecov
-            ./.codecov
+      run: curl -s https://codecov.io/bash | bash -s - -t token
