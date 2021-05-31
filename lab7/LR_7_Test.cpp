@@ -45,6 +45,7 @@ void OutTest()
     Out(user, baze);
     cout << "Out test completed" << endl;
 }
+/*
 void ShowAllContactsTest()
 {
     Person user1;
@@ -66,7 +67,7 @@ void ShowAllEventsTest()
     answ = ShowAllEvents(user);	
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
     cout << "ShowAllEvents test completed" << endl;
-}
+}*/
 #undef main
 
 int main()
