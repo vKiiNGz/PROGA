@@ -84,9 +84,9 @@ void ShowAllEventsTest()
 int main()
 {
     //ShowAllEventsTest();  
-    //SearchContacntTest();
+    SearchContacntTest();
     //ScheduleTest();
-    InTest();
+    //InTest();
     //OutTest();
     //ShowAllContactsTest();  
 }
