@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <fstream>
 #include <string>
-#include <conio.h>
 #include <iostream>
 #include "list.h"
 class Person
