@@ -9,6 +9,7 @@ void SearchContacntTest()
 {
     fstream baze;
 	baze.open("Data.txt");
+	char buff[256];
 	Person user;
 	In(user, baze);
     string answ, _name = "Ilya", _surname = "Lazyk";  
@@ -18,10 +19,11 @@ void SearchContacntTest()
 }
 void ScheduleTest()
 {
-    string _name = "Sementsov_Birthday", _data = "23.05.2002", _start = "18:00", _place = "Prime_Hall";
-	int _time = 240;
-	bool _period = true;
-    user.Events.push_back(_name, _data, _place, _start, _time, _period);
+    fstream baze;
+	baze.open("Data.txt");
+	char buff[256];
+	Person user;
+	In(user, baze);
     string answ;
     answ = Schedule(user, "23.05.2002");
     assert(answ == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
@@ -32,20 +34,26 @@ void InTest()
 {
     fstream baze;
 	baze.open("Data.txt");
+	char buff[256];
 	Person user;
 	In(user, baze);
+    assert(user.Contacts.first->name == "Nickolay");
+    assert(user.Contacts[1] ->name== "Nikita");
     cout << "In test completed" << endl;
+
 }
 void OutTest()
 {
     fstream baze;
 	baze.open("Data.txt");
+	char buff[256];
 	Person user;
 	In(user, baze);
     Out(user, baze);
+	baze.close();
+    assert(user.Contacts.first->name == "Nickolay");
     cout << "Out test completed" << endl;
 }
-/*
 void ShowAllContactsTest()
 {
     Person user1;
@@ -67,15 +75,15 @@ void ShowAllEventsTest()
     answ = ShowAllEvents(user);	
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
     cout << "ShowAllEvents test completed" << endl;
-}*/
+}
 #undef main
 
 int main()
 {
-    //ShowAllEventsTest(); 
-    //ShowAllContactsTest();
-    //SearchContacntTest();
-    //ScheduleTest();
+    ShowAllEventsTest();  
+    SearchContacntTest();
+    ScheduleTest();
     InTest();
-    //OutTest();  
+    OutTest();
+    ShowAllContactsTest();  
 }

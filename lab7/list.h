@@ -55,7 +55,7 @@ struct listP {
 
 struct NodeE {
 
-	string name, data, start, place;
+	string name, data, place, start;
 	int time;
 	bool period;
 	NodeE* next;

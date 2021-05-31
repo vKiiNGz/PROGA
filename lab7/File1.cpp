@@ -1,6 +1,3 @@
-#pragma hdrstop
-#pragma argsused
-
 #ifdef _WIN32
 #include <tchar.h>
 #else
@@ -503,7 +500,7 @@ string* ShowAllContacts(Person &user)
 		viv += user.Contacts[j]->dateOfBirth + " ";
 		arr[j] = viv;
 	}
-	return(arr);
+	return arr;
 }
 
 string* ShowAllEvents(Person &user)
@@ -534,7 +531,7 @@ string* ShowAllEvents(Person &user)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int i = 0;
+	int i = 1;
 	fstream baze;
 	baze.open("Data.txt");
 	char buff[256];
