@@ -85,5 +85,5 @@ int main()
     //ScheduleTest();
     //InTest();
     //OutTest();
-    //ShowAllContactsTest();  
+    ShowAllContactsTest();  
 }
