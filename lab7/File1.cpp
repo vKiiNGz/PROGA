@@ -297,7 +297,7 @@ string SearchContacnt(Person &user, string _name, string _surname)
 string Schedule(Person &user, string _date)
 {
 	string viv;
-	for (int i = 0; i <= user.Events.size + 1 ; i++)
+	for (int i = 0; i < user.Events.size + 1 ; i++)
 	{
 		if (_date == user.Events[i]->data)
 		{
