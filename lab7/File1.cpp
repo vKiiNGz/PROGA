@@ -326,12 +326,6 @@ void In(Person &user, fstream &baze)
     char buff[256];
 	string str = "";
     int help = 0;
-	cout << "o" << endl;
-	if (!baze.is_open()) 
-    	{
-		cout << "aboba" << endl;	
-		baze.open("Data.txt");
-    	}
 	while (!baze.eof())
 	{
 		baze.getline(buff, sizeof(buff));
@@ -340,12 +334,10 @@ void In(Person &user, fstream &baze)
 		if (str == "Contacts: ")
 		{
 			help = 1;
-			cout << "a" << endl;
 		}
 		if (str == "Events: ")
 		{
 			help = 2;
-			cout << "b" << endl;
 		}
 		if (help == 0)
 		{
