@@ -80,7 +80,7 @@ void ShowAllEventsTest()
 
 int main()
 {
-    //ShowAllEventsTest();  
+    ShowAllEventsTest();  
     SearchContacntTest();
     ScheduleTest();
     InTest();
