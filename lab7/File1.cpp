@@ -440,7 +440,7 @@ void In(Person &user, fstream &baze)
 void Out(Person &user, fstream &baze)
 {
     baze.close();
-	baze.open("D:\\programm\\053502\\sem_2\\C\\LR_7b\\Data.txt", std::fstream::out | std::fstream::trunc);
+	baze.open("Data.txt", std::fstream::out | std::fstream::trunc);
 
 	baze.clear();
 	string viv = "";
