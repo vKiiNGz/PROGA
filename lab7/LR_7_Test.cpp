@@ -72,7 +72,7 @@ void ShowAllEventsTest()
 int main()
 {
     //ShowAllEventsTest(); 
-    ShowAllContactsTest();
+    //ShowAllContactsTest();
     //SearchContacntTest();
     //ScheduleTest();
     InTest();
