@@ -67,6 +67,9 @@ void ShowAllContactsTest()
 void ShowAllEventsTest()
 {
     Person user;
+	fstream baze;
+	baze.open("Data.txt");
+	In(user, baze);
     string* answ = new string[1];
     string _name = "Sementsov_Birthday", _data = "23.05.2002", _start = "18:00", _place = "Prime_Hall";
 	int _time = 240;
@@ -75,13 +78,7 @@ void ShowAllEventsTest()
     answ = ShowAllEvents(user);
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
 	
-fstream baze;
-baze.open("Data.txt");
-char buff[256];
-Person user1;
-	In(user1, baze);
-
-    //assert(user1.Contacts.first->name == "Nickolay");
+	
     cout << "Out test completed" << endl;
 	
     cout << "ShowAllEvents test completed" << endl;
