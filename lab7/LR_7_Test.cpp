@@ -8,13 +8,16 @@ void AddEvent(Person &user);*/
 void SearchContacntTest()
 {
     fstream baze;
-	cout << "aaa" << endl;
 	baze.open("Data.txt");
 	char buff[256];
 	Person user;
+	cout << "aaa" << endl;
 	In(user, baze);
+	cout << "aaa" << endl;
     string answ, _name = "Ilya", _surname = "Lazyk";  
+	cout << "aaa" << endl;
     answ = SearchContacnt(user, _name, _surname);
+	cout << "aaa" << endl;
     assert(answ == "Ilya Lazyk Sergeevich BSUIR 03.07.2002 ");
     cout << "SearchContacnt test completed" << endl; 
 }
