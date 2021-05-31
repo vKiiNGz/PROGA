@@ -1,10 +1,6 @@
 #include "File1.h"
 #include <assert.h>
 
-/*string DateIn(bool ff);
-string TimeIn();
-void AddContact(Person &user);
-void AddEvent(Person &user);*/
 void SearchContacntTest()
 {
     fstream baze;
