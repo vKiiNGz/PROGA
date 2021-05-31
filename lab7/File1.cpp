@@ -324,10 +324,10 @@ string Schedule(Person &user, string _date)
 void In(Person &user, fstream &baze)
 {
     char buff[256];
-	string str;
+	string str = "";
     int help = 0;
 	cout << "o" << endl;
-	while (!baze.eof())
+	while (str[(int)str.Length()-1] != "$")
 	{
 		baze.getline(buff, sizeof(buff));
 		str = buff;
