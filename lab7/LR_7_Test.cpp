@@ -37,11 +37,8 @@ void InTest()
 	char buff[256];
 	Person user;
 	In(user, baze);
-	cout << "aaa" << endl;
     assert(user.Contacts.first->name == "Nickolay");
-	cout << "aaa" << endl;
     assert(user.Contacts[1] ->name== "Nikita");
-	cout << "aaa" << endl;
     cout << "In test completed" << endl;
 
 }
@@ -77,14 +74,15 @@ void ShowAllEventsTest()
     user.Events.push_back(_name, _data, _place, _start, _time, _period);
     answ = ShowAllEvents(user);
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
+	assert(user.Events.first->name == "Sementsov_Birthday");
     cout << "ShowAllEvents test completed" << endl;
 }
 #undef main
 
 int main()
 {
-    //ShowAllEventsTest();  
-    SearchContacntTest();
+    ShowAllEventsTest();  
+    //SearchContacntTest();
     //ScheduleTest();
     //InTest();
     //OutTest();
