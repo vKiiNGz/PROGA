@@ -491,7 +491,7 @@ string* ShowAllContacts(Person &user)
 	string viv;
 	string* arr = new string[user.Contacts.size];
 	cout << "All your contacts: " << endl;;
-	for (int j = 0; j <= user.Contacts.size; j++)
+	for (int j = 0; j < user.Contacts.size; j++)
 	{
 		viv = "";
 		viv += user.Contacts[j]->name + " ";
@@ -509,7 +509,7 @@ string* ShowAllEvents(Person &user)
 	string viv;
 	string* arr = new string[user.Events.size];
 	cout << "All your events: " << endl;
-	for (int i = 0; i <= user.Events.size ; i++)
+	for (int i = 0; i < user.Events.size ; i++)
 	{
 		viv = "";
 		viv += user.Events[i]->name + " ";
