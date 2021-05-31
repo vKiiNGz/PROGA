@@ -53,17 +53,16 @@ void ShowAllContactsTest()
     string* answ1 = new string[user1.Contacts.size + 1];
     answ1 = ShowAllContacts(user1);
     assert(answ1[0] == "Nikita Sementsov Alexeyevich GRGU 23.05.2002 ");
-    cout << user1.Contacts.size;
     cout << "ShowAllContacts test completed" << endl;
 }
 void ShowAllEventsTest()
 {
     Person user;
-    string* answ = new string[1];
     string _name = "Sementsov_Birthday", _data = "23.05.2002", _start = "18:00", _place = "Prime_Hall";
 	int _time = 240;
 	bool _period = true;
     user.Events.push_back(_name, _data, _place, _start, _time, _period);
+    string* answ = new string[user.Events.size + 1];
     answ = ShowAllEvents(user);	
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
     cout << "ShowAllEvents test completed" << endl;
