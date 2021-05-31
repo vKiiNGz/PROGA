@@ -326,6 +326,7 @@ void In(Person &user, fstream &baze)
     char buff[256];
 	string str;
     int help = 0;
+	cout << "o" << endl;
 	while (!baze.eof())
 	{
 		baze.getline(buff, sizeof(buff));
