@@ -9,8 +9,9 @@ void SearchContacntTest()
 	In(user, baze);
     string answ, _name = "Nickolay", _surname = "Vashkevich";  
     answ = SearchContacnt(user, _name, _surname);
-	cout << user.Contacts.first->name << endl;
 	cout << answ << endl;
+	cout << user.Contacts.first->name << endl;
+	
     assert(answ == "Nickolay Vashkevich Vladimirovich BSUIR 12.09.2002 ");
     cout << "SearchContacnt test completed" << endl; 
 }
