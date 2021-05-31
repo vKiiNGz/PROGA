@@ -54,16 +54,6 @@ void OutTest()
     assert(user.Contacts.first->name == "Nickolay");
     cout << "Out test completed" << endl;
 }
-void ShowAllContactsTest()
-{
-    Person user1;
-    string* answ1 = new string[1];
-    string _name1 = "Nikita", _surname1 = "Sementsov", _patronymic1= "Alexeyevich", _placeofwork1 = "GRGU", _dateofbirth1 = "23.05.2002";
-    user1.Contacts.push_back(_name1, _surname1, _patronymic1, _placeofwork1, _dateofbirth1);
-    answ1 = ShowAllContacts(user1);
-    assert(answ1[0] == "Sementsov Nikita Alexeyevich GRGU 23.05.2002");
-    cout << "ShowAllContacts test completed" << endl;
-}
 void ShowAllEventsTest()
 {
     Person user;
@@ -76,10 +66,12 @@ void ShowAllEventsTest()
 	bool _period = true;
     user.Events.push_back(_name, _data, _place, _start, _time, _period);
     answ = ShowAllEvents(user);
+	 Out(user, baze);
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
 	
 	
-    cout << "Out test completed" << endl;
+    cout << "In test completed" << endl;
+	cout << "Out test completed" << endl;
 	
     cout << "ShowAllEvents test completed" << endl;
 }
