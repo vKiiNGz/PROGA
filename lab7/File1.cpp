@@ -36,7 +36,7 @@ string DateIn(bool ff)
 			int poin = 0, day = 0, mon = 0, year = 0;
 			cin.getline(buff, sizeof(buff));
 			_dateofbirth = buff;
-			for(int i = 0; i < _dateofbirth.length(); i++)
+			for(int i = 0; i < (int)_dateofbirth.length(); i++)
 			{
 				if (!((_dateofbirth[i] >= '0' && _dateofbirth[i] <= '9') || _dateofbirth[i] == '.' ))
 				{
@@ -113,7 +113,7 @@ string TimeIn()
 			int poin = 0, hour = 0, min = 0;
 			cin.getline(buff, sizeof(buff));
 			time = buff;
-			for(int i = 0; i < time.length(); i++)
+			for(int i = 0; i < (int)time.length(); i++)
 			{
 				if (!((time[i] >= '0' && time[i] <= '9') || time[i] == ':' ))
 				{
@@ -239,7 +239,7 @@ void AddEvent(Person &user)
 			cin.getline(buff, sizeof(buff));
 			h = buff;
 			int time = 0;
-			for(int i = 0; i < h.length(); i++)
+			for(int i = 0; i < (int)h.length(); i++)
 			{
 				if (!(h[i] >= '0' && h[i] <= '9'))
 				{
@@ -342,7 +342,7 @@ void In(Person &user, fstream &baze)
 		{
 			int spc = 0;
 			string h;
-			for (int i = 0; i < str.length(); i++)
+			for (int i = 0; i < (int)str.length(); i++)
 			{
 				if (str[i] == ' ')
 				{
@@ -398,7 +398,7 @@ void In(Person &user, fstream &baze)
 			string name, data, start, place, times, periods;
 			int time;
 			bool period;
-			for (int i = 0; i < str.length(); i++)
+			for (int i = 0; i < (int)str.length(); i++)
 			{
 				if (str[i] == ' ')
 				{
