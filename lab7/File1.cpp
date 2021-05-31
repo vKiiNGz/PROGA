@@ -273,7 +273,7 @@ string SearchContacnt(Person &user, string _name, string _surname)
 	bool f = true;
 	string viv;
 
-	for (int i = 0; i <= user.Contacts.size; i++)
+	for (int i = 0; i < user.Contacts.size; i++)
 	{
 		if(user.Contacts[i]->name == _name && user.Contacts[i]->surname == _surname)
 		{
