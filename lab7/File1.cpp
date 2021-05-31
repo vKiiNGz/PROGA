@@ -334,10 +334,12 @@ void In(Person &user, fstream &baze)
 		if (str == "Contacts: ")
 		{
 			help = 1;
+			cout << "a" << endl;
 		}
 		if (str == "Events: ")
 		{
 			help = 2;
+			cout << "b" << endl;
 		}
 		if (help == 0)
 		{
