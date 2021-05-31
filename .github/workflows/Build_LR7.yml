@@ -17,4 +17,4 @@ jobs:
       working-directory: ./lab7
       run: make test
     - name: Codecov
-      run: bash (curl -s https://codecov.io/bash)
+      run: bash <(curl -s https://codecov.io/bash)
