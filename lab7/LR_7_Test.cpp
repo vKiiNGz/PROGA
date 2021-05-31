@@ -8,6 +8,7 @@ void AddEvent(Person &user);*/
 void SearchContacntTest()
 {
     fstream baze;
+	cout << "aaa" << endl;
 	baze.open("Data.txt");
 	char buff[256];
 	Person user;
