@@ -34,8 +34,8 @@ string DateIn(bool ff)
 				cout << "Enter date of event: " << endl;
             }
 			int poin = 0, day = 0, mon = 0, year = 0;
-			cin.getline(buff, sizeof(buff));
-			_dateofbirth = buff;
+			//cin.getline(buff, sizeof(buff));
+			_dateofbirth = "25.03.2021";
 			for(int i = 0; i < (int)_dateofbirth.length(); i++)
 			{
 				if (!((_dateofbirth[i] >= '0' && _dateofbirth[i] <= '9') || _dateofbirth[i] == '.' ))
@@ -111,8 +111,8 @@ string TimeIn()
 		{
 			cout << "Enter time of start: " << endl;
 			int poin = 0, hour = 0, min = 0;
-			cin.getline(buff, sizeof(buff));
-			time = buff;
+			//cin.getline(buff, sizeof(buff));
+			time = "18:00";
 			for(int i = 0; i < (int)time.length(); i++)
 			{
 				if (!((time[i] >= '0' && time[i] <= '9') || time[i] == ':' ))
@@ -164,7 +164,6 @@ string TimeIn()
 	}
 	return(time);
 }
-
 void AddContact(Person &user)
 {
 	char buff[256];
