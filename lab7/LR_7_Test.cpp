@@ -68,6 +68,11 @@ void ShowAllEventsTest()
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
     cout << "ShowAllEvents test completed" << endl;
 }
+void StarLineTest()
+{
+    StarLine();
+    cout << "StarLine test completed" << endl;
+}
 #undef main
 
 int main()
@@ -78,4 +83,5 @@ int main()
     InTest();
     OutTest();
     ShowAllContactsTest();  
+    StarLineTest();
 }
