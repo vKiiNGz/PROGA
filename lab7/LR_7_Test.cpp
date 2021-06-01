@@ -98,9 +98,8 @@ void starttest()
 	Person user;
 	fstream baze;
 	baze.open("Data.txt");
-	Person user;
 	string name, surname; 
-	void start(Person &user , fstream &baze, string &name, string &surname);
+	start(user, baze, name, surname);
 	assert(name == "Dmitry");
     cout << "start test completed" << endl;	
 }
