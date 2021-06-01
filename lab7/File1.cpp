@@ -461,15 +461,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	string name, surname;
 	name = user.GetName();
 	surname = user.GetSurname();
-	cout << "Hello, dear " << name << ' ' << surname << endl;
-	cout << "What you want to do?" << endl;
 	while(i != 0)
 	{
-		cout << "Search contact - 3" << endl;
-		cout << "Show events for a specific date  - 4" << endl;
-		cout << "Show all contacts - 5" << endl;
-		cout << "Show all events - 6" << endl;
-		cout << "Exit- 0" << endl;
 		cin >> i;
 		if(i >= 0 && i < 7)
 		{
@@ -480,10 +473,8 @@ int _tmain(int argc, _TCHAR* argv[])
 				{
 					string _name, _surname;
 					cin.getline(buff, sizeof(buff));
-					cout << "Enter name: " << endl;
 					cin.getline(buff, sizeof(buff));
 					_name = buff;
-					cout << "Enter surname: " << endl;
 					cin.getline(buff, sizeof(buff));
 					_surname = buff;
 					cout << SearchContacnt(user, _name, _surname) << endl;
@@ -532,7 +523,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 		else
 		{
-			cout << "Incorect input. Try again" << endl;
 			StarLine();
 		}
 	}
