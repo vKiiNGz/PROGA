@@ -93,7 +93,7 @@ void TimeInTest()
     cout << "TimeIn test completed" << endl;
 }
 
-void starttest()
+void startTest()
 {
 	Person user;
 	fstream baze;
