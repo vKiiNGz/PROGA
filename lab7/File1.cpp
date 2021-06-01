@@ -456,6 +456,28 @@ void start(Person &user , fstream &baze, string &name, string &surname)
 	surname = user.GetSurname();	
 }
 
+void Case5(Person &user)
+{
+	string* arr = new string[user.Contacts.size + 1];
+	arr = ShowAllContacts(user);
+	for (int j = 0; j <= user.Contacts.size; j++)
+	{
+		cout << arr[j] << endl;
+	}
+	StarLine();
+}
+
+void Case6(Person &user)
+{
+	string* arr = new string[user.Events.size + 1];
+	arr = ShowAllEvents(user);
+	for (int j = 0; j <= user.Events.size; j++)
+	{
+		cout << arr[j] << endl;
+	}				
+	StarLine();
+}
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int i = 1;
@@ -470,7 +492,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		cin >> i;
 		if(i >= 0 && i < 7)
 		{
-			StarLine();
 			switch(i)
 			{
 				case 3:
@@ -482,7 +503,6 @@ int _tmain(int argc, _TCHAR* argv[])
 					cin.getline(buff, sizeof(buff));
 					_surname = buff;
 					cout << SearchContacnt(user, _name, _surname) << endl;
-					StarLine();
 					break;
 				}
 				case 4:
@@ -491,29 +511,16 @@ int _tmain(int argc, _TCHAR* argv[])
 					 cin.getline(buff, sizeof(buff));
 					 _date = DateIn(false);
 					 cout << Schedule(user, _date) << endl;
-					 StarLine();
 					 break;
 				}
 				case 5:
 				{
-					string* arr = new string[user.Contacts.size + 1];
-					arr = ShowAllContacts(user);
-					for (int j = 0; j <= user.Contacts.size; j++)
-					{
-						cout << arr[j] << endl;
-					}
-					StarLine();
+					Case5(user);
 					break;
 				}
 				case 6:
 				{
-					string* arr = new string[user.Events.size + 1];
-					arr = ShowAllEvents(user);
-					for (int j = 0; j <= user.Events.size; j++)
-					{
-						cout << arr[j] << endl;
-					}
-					StarLine();
+					Case6(user);
 					break;
 				}
 				case 0:
