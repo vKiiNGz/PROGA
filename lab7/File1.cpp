@@ -455,7 +455,16 @@ void Case6(Person &user)
 	}				
 	StarLine();
 }
-
+string Case7(Person &user)
+{
+	string viv = "";
+	viv += user.GetName() + " ";
+	viv += user.GetSurname() + " ";
+	viv += user.GetPatronymic() + " ";
+	viv += user.GetPlaceOfWork() + " ";
+	viv += user.GetDateOfBirth();
+	return viv;	
+}
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int i = 1;
@@ -468,7 +477,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	while(i != 0)
 	{
 		cin >> i;
-		if(i >= 0 && i < 7)
+		if(i >= 0 && i < 8)
 		{
 			switch(i)
 			{
@@ -500,6 +509,12 @@ int _tmain(int argc, _TCHAR* argv[])
 				{
 					Case6(user);
 					break;
+				}
+				case 7:
+				{
+					cout << Case7(user) << endl;
+					break;
+					StarLine();
 				}
 				case 0:
 				{
