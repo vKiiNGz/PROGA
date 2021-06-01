@@ -164,28 +164,6 @@ string TimeIn()
 	}
 	return(time);
 }
-void AddContact(Person &user)
-{
-	char buff[256];
-	string _name, _surname, _patronymic, _placeofwork, _dateofbirth;
-	cout << "Enter name: " << endl;
-	cin.getline(buff, sizeof(buff));
-	cin.getline(buff, sizeof(buff));
-	_name = buff;
-	cout << "Enter surname: " << endl;
-	cin.getline(buff, sizeof(buff));
-	_surname = buff;
-	cout << "Enter patronymic: " << endl;
-	cin.getline(buff, sizeof(buff));
-	_patronymic = buff;
-	cout << "Enter place of work: " << endl;
-	cin.getline(buff, sizeof(buff));
-	_placeofwork = buff;
-
-	_dateofbirth = DateIn(true);
-	user.Contacts.push_back(_name, _surname, _patronymic, _placeofwork, _dateofbirth);
-	StarLine();
-}
 
 string SearchContacnt(Person &user, string _name, string _surname)
 {
