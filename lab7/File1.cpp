@@ -536,7 +536,5 @@ int _tmain(int argc, _TCHAR* argv[])
 			StarLine();
 		}
 	}
-	Out(user, baze);
-	baze.close();
 	return 0;
 }
