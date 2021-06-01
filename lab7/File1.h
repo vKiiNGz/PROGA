@@ -18,3 +18,4 @@ string* ShowAllEvents(Person &user);
 void start(Person &user , fstream &baze, string &name, string &surname);
 void Case5(Person &user);
 void Case6(Person &user);
+string Case7(Person &user);
