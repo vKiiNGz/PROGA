@@ -447,6 +447,13 @@ string* ShowAllEvents(Person &user)
 		arr[i] = viv;
 	}
 	return(arr);
+} 
+void start(Person &user , fstream &baze, string &name, string &surname) 
+{
+	In(user, baze);
+	StarLine();
+	name = user.GetName();
+	surname = user.GetSurname();	
 }
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -456,11 +463,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	baze.open("Data.txt");
 	char buff[256];
 	Person user;
-	In(user, baze);
-	StarLine();
 	string name, surname;
-	name = user.GetName();
-	surname = user.GetSurname();
+	start(user, baze, name, surname);
 	while(i != 0)
 	{
 		cin >> i;
