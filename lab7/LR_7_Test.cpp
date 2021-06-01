@@ -92,6 +92,18 @@ void TimeInTest()
     assert(answ1 == "18:00");  
     cout << "TimeIn test completed" << endl;
 }
+
+void starttest()
+{
+	Person user;
+	fstream baze;
+	baze.open("Data.txt");
+	Person user;
+	string name, surname; 
+	void start(Person &user , fstream &baze, string &name, string &surname)
+	assert(name == "Dmitry");
+    cout << "start test completed" << endl;	
+}
 #undef main
 
 int main()
@@ -105,4 +117,5 @@ int main()
     StarLineTest();
     DateInTest();
     TimeInTest();
+    startTest();
 }
