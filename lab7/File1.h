@@ -15,4 +15,4 @@ void In(Person &user, fstream &baze);
 void Out(Person &user, fstream &baze);
 string* ShowAllContacts(Person &user);
 string* ShowAllEvents(Person &user);
-void start(Person &user , fstream &baze, string &name, string &surname)
+void start(Person &user , fstream &baze, string &name, string &surname);
