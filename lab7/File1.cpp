@@ -448,15 +448,12 @@ string* ShowAllEvents(Person &user)
 	}
 	return(arr);
 } 
-void starttest()
+void start(Person &user , fstream &baze, string &name, string &surname) 
 {
-	Person user;
-	fstream baze;
-	baze.open("Data.txt");
-	string name, surname; 
-	start(user, baze, name, surname);
-	assert(name == "Dmitry");
-    cout << "start test completed" << endl;	
+	In(user, baze);
+	StarLine();
+	name = user.GetName();
+	surname = user.GetSurname();	
 }
 
 int _tmain(int argc, _TCHAR* argv[])
