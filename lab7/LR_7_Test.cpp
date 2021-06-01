@@ -68,10 +68,29 @@ void ShowAllEventsTest()
     assert(answ[0] == "Sementsov_Birthday 23.05.2002 Prime_Hall 18:00 240 period");
     cout << "ShowAllEvents test completed" << endl;
 }
+
 void StarLineTest()
 {
     StarLine();
     cout << "StarLine test completed" << endl;
+}
+
+void DateInTest()
+{
+    string answ1 = "", answ2 = "";
+    answ1 = DateIn(true);
+    answ2 = DateIn(false);
+    assert(answ1 == "25.03.2021");
+    assert(answ2 == "25.03.2021");
+    cout << "DateIn test completed" << endl;
+}
+
+void TimeInTest()
+{
+    string answ1 = "";
+    answ1 = TimeIn(); 
+    assert(answ1 == "18:00");  
+    cout << "TimeIn test completed" << endl;
 }
 #undef main
 
@@ -84,4 +103,6 @@ int main()
     OutTest();
     ShowAllContactsTest();  
     StarLineTest();
+    DateInTest();
+    TimeInTest();
 }
