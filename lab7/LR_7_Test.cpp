@@ -103,6 +103,27 @@ void startTest()
 	assert(name == "Dmitry");
     cout << "start test completed" << endl;	
 }
+void Case5Test()
+{
+    Person user;
+	fstream baze;
+	baze.open("Data.txt");
+	string name, surname; 
+	start(user, baze, name, surname);
+    Case5(user);
+    cout << "Case5 test completed" << endl;   
+}
+
+void Case6Test()
+{
+    Person user;
+	fstream baze;
+	baze.open("Data.txt");
+	string name, surname; 
+	start(user, baze, name, surname);
+    Case6(user);
+    cout << "Case6 test completed" << endl;   
+}
 #undef main
 
 int main()
@@ -117,4 +138,6 @@ int main()
     DateInTest();
     TimeInTest();
     startTest();
+    Case5Test();
+    Case6Test();
 }
