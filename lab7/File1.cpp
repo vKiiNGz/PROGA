@@ -187,86 +187,6 @@ void AddContact(Person &user)
 	StarLine();
 }
 
-void AddEvent(Person &user)
-{
-	char buff[256];
-	string _name, _data, _start, _place;
-	int _time;
-	bool _period;
-	cin.getline(buff, sizeof(buff));
-	cout << "Enter name of event: " << endl;
-	cin.getline(buff, sizeof(buff));
-	_name = buff;
-	_data = DateIn(false);
-	cout << "Enter place: " << endl;
-	cin.getline(buff, sizeof(buff));
-	_place = buff;
-	_start = TimeIn();
-	bool f = true;
-	while(f)
-	{
-		string h;
-		cout << "Is it periodic? 1/0" << endl;
-		cin.getline(buff, sizeof(buff));
-		h = buff;
-		if (h == "1")
-		{
-			_period = true;
-			f = false;
-		}
-		else
-		{
-			if (h == "0")
-			{
-				_period = false;
-				f = false;
-			}
-			else
-			{
-				cout << "Incorect input. Try again" << endl;
-			}
-		}
-	}
-
-	f = true;
-	while (f)
-	{
-		while (f)
-		{
-			cout << "Enter timy taken by the event: " << endl;
-			string h;
-			cin.getline(buff, sizeof(buff));
-			h = buff;
-			int time = 0;
-			for(int i = 0; i < (int)h.length(); i++)
-			{
-				if (!(h[i] >= '0' && h[i] <= '9'))
-				{
-					cout << "Incorect time. Try again";
-					break;
-				}
-				else
-				{
-					time = time * 10 + (h[i] - '0');
-				}
-			}
-			if (time >= 0 && time < 1440)
-			{
-				f = false;
-				_time = time;
-			}
-			else
-			{
-				cout << "Incorect time. Try again";
-				break;
-			}
-
-		}
-	}
-	user.Events.push_back(_name, _data, _place, _start, _time, _period);
-	StarLine();
-}
-
 string SearchContacnt(Person &user, string _name, string _surname)
 {
 	bool f = true;
@@ -545,8 +465,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "What you want to do?" << endl;
 	while(i != 0)
 	{
-		cout << "Add new contact - 1" << endl;
-		cout << "Add new event - 2" << endl;
 		cout << "Search contact - 3" << endl;
 		cout << "Show events for a specific date  - 4" << endl;
 		cout << "Show all contacts - 5" << endl;
@@ -558,8 +476,6 @@ int _tmain(int argc, _TCHAR* argv[])
 			StarLine();
 			switch(i)
 			{
-				case 1: AddContact(user); break;
-				case 2: AddEvent(user); break;
 				case 3:
 				{
 					string _name, _surname;
